@@ -5,10 +5,10 @@ preRun:
         - npm install
 preMerge:
   pattern:
-    - "./test/*.test.js"
+    - "./test/lint-verify-fail.test.js"
 postMerge:
   pattern:
-    - "./test/*.test.js"
+    - "./test/lint-verify-fail.test.js"
 postRun:
      command:
         - node --version
